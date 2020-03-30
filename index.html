@@ -4,73 +4,80 @@
 <head>
 
 <title>KeneEzeife</title>
-<style>
-.slider-holder
-        {
-            width: 800px;
-            height: 400px;
-            background-color: yellow;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            text-align: center;
-            overflow: hidden;
-        }
+<style type="text/css">  
+        body {  
+            margin: 0;  
+            background: #e6e6e6;  
+        }  
+        .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+    </style>  
        
-        .image-holder
-        {
-            width: 2400px;
-            background-color: red;
-            height: 400px;
-            clear: both;
-            position: relative;
-           
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
-       
-        .slider-image
-        {
-            float: left;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-       
-        #slider-image-1:target ~ .image-holder
-        {
-            left: 0px;
-        }
-       
-        #slider-image-2:target ~ .image-holder
-        {
-            left: -800px;
-        }
-       
-        #slider-image-3:target ~ .image-holder
-        {
-            left: -1600px;
-        }
-       
-        .button-holder
-        {
-            position: relative;
-            top: -20px;
-        }
-       
-        .slider-change
-        {
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            border-radius: 5px;
-            background-color: brown;
-        }
-           
-           </style>
-           
            <!--          
         <script type="text/javascript">
 <!-->
@@ -158,21 +165,48 @@ background-color:blue;text-align:center;padding:4px;text-decoration:none;
 
 <p>The Banter is back and is coming back in style. Are you ready for the driest jokes, hottest pics and latest gist in town.</p>
                  
-     <div class="slider-holder">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <div class="image-holder">
-            <img src="https://cdn1.thr.com/sites/default/files/2019/08/marsai_martin_young_hollywood.jpg" class="slider-image">
-            <img src="https://s.abcnews.com/images/GMA/marsai-martin-gty-ml-200103_hpMain_16x9t_1600.jpg" class="slider-image">
-            <img src="https://pmcvariety.files.wordpress.com/2018/01/rexfeatures_9327715cg.jpg?w=1000" class="slider-image">
-        </div>
-        <div class="button-holder">
-            <a href="#slider-image-1" class="slider-change"></a>
-            <a href="#slider-image-2" class="slider-change"></a>
-            <a href="#slider-image-3" class="slider-change"></a>
-        </div>
-    </div>         
+     <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="https://cdn1.thr.com/sites/default/files/2019/08/marsai_martin_young_hollywood.jpg" />  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="https://pmcvariety.files.wordpress.com/2019/02/marsai-martin.jpg?w=1000"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="https://i.ytimg.com/vi/3scvibvO-So/maxresdefault.jpg"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190207120401-marsai-martin.jpg"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>          
+<script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+</script> 
            <!--
 <img src="pictures/bant.png"  name="slide" alt="imageslideshow" height="600">
 
