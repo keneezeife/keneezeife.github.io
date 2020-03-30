@@ -34,14 +34,31 @@ color: blue;
            
 <style> 
 
-.menu ul {list-style-type:none; padding:0; margin: 0; background-color: black;  position: fixed; top: 0; width: 100%;}
-.menu li {display: inline;} 
-.menu li a{display:block;  padding: 14px 16px; border-right: 1px solid #bbb; text-align:center;} 
-.menu li:last-child {border-right: none;}
-.menu a:link {font-weight:bold; color:white;}
-.menu a:hover{font-weight:bold; color:white; background-color: blue;}
-.menu a:active{font-weight:bold; color:white; background-color: blue;}
- 
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu li a:hover {
+  background-color: #111;
+}
 
 .hori ul {list-style-type:none; padding:0px;}
 .hori li {float:left; padding:1px;} 
