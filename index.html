@@ -67,15 +67,19 @@ color: blue;
 /* Change the link color to #111 (black) on hover */
 .menu li a:hover {background-color: #111;}
 
-.textbox {margin: auto;}
+.textbox {margin: auto; transition: transform .2s;}
 .textbox ul {list-style-type:none; padding:0px; margin: auto;}
 .textbox li {display:inline; padding:8px;} 
 .textbox a{display: inline-block; width: 300px; height:400px;} 
 .textbox a:link, a:visited {font-weight:bold;color:white;
 background-color:blue;text-align:center;padding:4px;text-decoration:none;
 }
-.textbox a:hover{background-color:green; transform: scale(1.5)} 
-.textbox a:active{background-color:green; transform: scale(1.5)}
+.textbox a:hover{background-color:green; transform: scale(1.2)} 
+.textbox a:active{background-color:green; transform: scale(1.2)}
+
+.textbox1 {margin: auto; display: inline-block; width: 300px; height:400px; color:black; 
+        background-color:blue;text-align:center;padding:6px;}
+
 
 
 </style>
@@ -116,7 +120,10 @@ background-color:blue;text-align:center;padding:4px;text-decoration:none;
 
 </marquee>
 
+        <div class="textbox1">
 <p>3</p>
+        </div>
+        
                  
      <div class="slidercontainer">  
         <div class="showSlide fade">  
