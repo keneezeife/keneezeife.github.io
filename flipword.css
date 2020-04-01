@@ -1,7 +1,5 @@
 
 .wordCarousel {
-    @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
-
     font-family: "Roboto Condensed", cursive;
     font-size: 36px;
     font-weight: 100;
@@ -9,7 +7,7 @@
     div {
         overflow: hidden;
         position: relative;
-        height: 65px;
+               height: 65px;
         padding-top: 10px;
         margin-top: -10px;
         li {
@@ -63,6 +61,5 @@
 
 // Layout //////////////////////////////////////////
 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
 
-
-  
