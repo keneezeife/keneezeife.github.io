@@ -5,15 +5,9 @@
 .topic {
 font-family: "Luckiest Guy", cursive;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  margin: auto;
+  margin: 0;
   display: block;
-  font-color: blue;
+  font-color: red;
 }
 
 .topic span {
