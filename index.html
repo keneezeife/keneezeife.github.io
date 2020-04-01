@@ -105,6 +105,34 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+  
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+$offset : -90px;
+$count : 40;
+$duration : 1;
+@keyframes wave {
+  from { transform : translateY(0); color: white; }
+  to   { transform : translateY( $offset ); }
+}
+/*Waving Text Animation*/
+.wavetext { margin-top : 10em; text-align : center;}
+.wavetext span {
+  display: inline-block;
+  font-family : "Fredoka One", sans-serif;
+  font-size : 70px; 
+  animation-duration: #{$duration}s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@for $i from 0 to $count {
+  .wavetext :nth-child( #{$count}n + #{$i} ) {
+      animation-delay : 
+        -#{($count - $i) * 2 * $duration / $count }s;
+ color: blue;
+  }
+}
+
 </style>
  
 <style> 
@@ -161,9 +189,20 @@ img {vertical-align: middle;}
 </div> 
   
 <div class="hometop"> 
+/*Waving Text*/
+<div class="wavetext"></div>
+<script>  
+  var text = "#myNYUAD";
 
-  <h1> Home </h1>
-
+for(var i in text) { 
+  if(text[i] === " ") {
+    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
+  } else {  
+    $(".wavetext").append( $("<span>").text(text[i]) ); 
+  }
+}
+</script>
+ /*Waving Text Ends*/
 </div> 
 
 <center>
