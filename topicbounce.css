@@ -4,6 +4,7 @@
 /* JUMP */
 .topic {
 font-family: Helvetica, cursive;
+  font-weight: 300px;
   position: absolute;
   margin: 40px 0px 0px 0px;
   display: block;
