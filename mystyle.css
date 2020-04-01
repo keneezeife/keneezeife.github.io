@@ -21,4 +21,4 @@ body{
 .menu li a {display: block; background-color: black;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
 
 .menu li a:hover{background-color: cyan;}
-.menu active {background-color: blue;}
+.menu li a:active {background-color: blue;}
