@@ -4,6 +4,10 @@ body{
   color: blue;
   margin: 0;} 
 
+.bringforward{
+position: relative;
+  z-index: 5;
+}
 
 .menu   {
 position: -webkit-sticky; /* Safari */
