@@ -5,6 +5,7 @@ body{
   margin: 0;} 
 
 .menu ul {
+  position: sticky;
   list-style-type: none;
   margin: 0;
   padding: 0;
