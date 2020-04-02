@@ -4,22 +4,19 @@ body{
   color: blue;
   margin: 0;} 
 
+
 .menu   {
 position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
- 
-}
-
+  top: 0;}
 .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  font-family: Helvetica;
-  font-size: 12px;
- 
+  font-family: Comic Sans MS;
+  font-size: 10px;
 }
 
 .menu li {
@@ -35,7 +32,7 @@ position: -webkit-sticky; /* Safari */
   text-decoration: none;
 }
 
-.dropbtn {
+.menu .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -57,7 +54,7 @@ position: -webkit-sticky; /* Safari */
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1px;
+  z-index: 1;
 }
 
 .menu .dropdown-content a {
