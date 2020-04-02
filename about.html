@@ -2,241 +2,91 @@
 <!doctype html>
 <html>
 <head>
-        
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+
 <title>KeneEzeife</title>
+<link rel="shortcut icon" href="icon.jpg"> 
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="topicbounce.css">  
+  <link rel="stylesheet" type="text/css" href="flipword.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<style> 
+/*Navigation Menu*/
 
-        
-<style type = "text/css">        
-       /*
-essential styles:
-these make the slideshow work
-*/
-#slides{
-    position: relative;
-    height: 300px;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-}
-
-.slide{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-}
-
-.showing{
-    opacity: 1;
-    z-index: 2;
-}
-
-
-.controls{
-    display: none;
-}
-
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-.slide{
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #333;
-    color: #fff;
-  
+.hometop {margin: 0px 0px 50px 0px; align ="center"; border: 0; width: auto; height:300px; 
+  background-image: url("homebackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
   background-size: cover;
-}
-
-/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
-.slide:nth-of-type(1){
-    background-color: red;
-  background-image: url("https://pmcvariety.files.wordpress.com/2018/01/rexfeatures_9327715cg.jpg?w=1000");
-}
-
-/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
-.slide:nth-of-type(2){
-    background-color: orange;
-  background-image: url("https://i2.wp.com/blackdoctor.org/wp-content/uploads/2019/07/GettyImages-1161067389.jpg?resize=860%2C574&quality=50&strip=all&ssl=1");
-}
-
-/* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
-.slide:nth-of-type(3){
-    background-color: green;
-  background-image: url("https://cdn1.thr.com/sites/default/files/2019/08/marsai_martin_young_hollywood.jpg");
-}
-
-.controls{
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 20px 0px;
-  font-size: 20px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  margin: 10px 0px 0px 10px;
-  width: 70px;
-}
-
-.controls:hover,
-.controls:focus{
-  background: #eee;
-  color: #333;
-}
-
-.container{
-  position: relative;
-}
-
-.buttons{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
-  font-size: 0px;
-} 
-</style>
-        <style>
-
-
+  padding:50px 15px 15px 15px; }
+  
+  .homebottom {margin: 40px 0px 0px 0px; align ="center"; border: 0; width: auto; height: auto; 
+  background-color: black;
+    color: white;
+    font-size:10;
+    padding: 0px 10px 0px 10px;}
+  .homebottom a{text-decoration: none;}
+ 
 .textbox {margin: auto; transition: transform 2s; border: 2px black;}
 .textbox ul {list-style-type:none; margin: auto;}
 .textbox li {display:inline-block;}
         
-.textbox a{display: inline-block;  width: 300px; height:400px; text-decoration: none;
+.textbox a{display: inline-block;  width: 250px; height:400px; text-decoration: none;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5); padding:30px;
         font-weight:bold;color: black; 
         background-color:white;text-align:center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);}
- .textbox a:first-child {margin-right: 30px;}
- .textbox a:last-child {margin-left: 30px;}
+ .textbox a:first-child {margin-right: 15px;}
+ .textbox a:last-child {margin-left: 15px;}
 .textbox a:hover{background-color:cyan;  transform: scale(1.1)} 
 .textbox a:active{background-color:cyan;  transform: scale(1.1)}
 
-.introbox {margin: 0,50,0,0; align ="center"; border: 2px black; width: 350px; height:500px; color:black; 
+.introbox {margin: 0,50,0,0; align ="center"; border: 2px black; width: 350px; height:1000px; color:black; 
         background-color:white;text-align:center;padding:6px; 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);}
 
-        .bottom {font-size: 10px;}
 </style>
 
 </head>
 
 <body>
+ 
+<div class = "menu">
 
-
-
-<div class="menu"> 
-<center>
-<ul><li><a href="index.html"> HOME</a></li> 
-<li><a href="about.html"> ABOUT US</a></li>
-<li><a href="work.html"> WORK</a></li> 
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Work</a>
+    <div class="dropdown-content">
+      <a href="workone.html">Work 1</a>
+      <a href="worktwo.html">Work 2</a>
+      <a href="workthree.html">Work 3</a>
+    </div>
+  </li>
 </ul>
-</center>
-</div> 
 
-<div class="slide"> 
-<li class="slide showing">"https://pmcvariety.files.wordpress.com/2018/01/rexfeatures_9327715cg.jpg?w=1000"</li>
-    <li class="slide"></li>
-    <li class="slide"></li>
-  </ul>
-  <div class="buttons">
-    <button class="controls" id="previous">&lt;</button>
-
-    <button class="controls" id="pause">&#10074;&#10074;</button>
-
-    <button class="controls" id="next">&gt;</button>
   </div>
-</div>
 
-<script type= "text/javascript">
-var controls = document.querySelectorAll('.controls');
-for(var i=0; i<controls.length; i++){
-    controls[i].style.display = 'inline-block';
-}
+<p>About Us</p>
 
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
-
-function nextSlide(){
-    goToSlide(currentSlide+1);
-}
-
-function previousSlide(){
-    goToSlide(currentSlide-1);
-}
-
-function goToSlide(n){
-    slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
-
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
-
-function pauseSlideshow(){
-    pauseButton.innerHTML = '&#9658;'; // play character
-    playing = false;
-    clearInterval(slideInterval);
-}
-
-function playSlideshow(){
-    pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
-    playing = true;
-    slideInterval = setInterval(nextSlide,2000);
-}
-
-pauseButton.onclick = function(){
-    if(playing){ pauseSlideshow(); }
-    else{ playSlideshow(); }
-};
-
-var next = document.getElementById('next');
-var previous = document.getElementById('previous');
-
-next.onclick = function(){
-    pauseSlideshow();
-    nextSlide();
-};
-previous.onclick = function(){
-    pauseSlideshow();
-    previousSlide();
-};
-</script>
-
-<div class="bottom"> 
-        <center>
-<br>Stay In Touch On</br> 
-<a href= "http://www.twitter.com"><img src="pictures/p11.png" alt="twitter" width=50px height=50px></img></a>
-<a href= "http://www.instagram.com"><img src="pictures/p9.jpg" alt="instagram" width=50px height=50px></img></a>
-<a href= "http://www.facebook.com"><img src="pictures/p10.png" alt="facebook" width=50px height=50px></img></a>
+<div class="homebottom"> 
+<br>Stay In Touch On: 
+<a href= "http://www.twitter.com"><img src="twitter.png" alt="twitter" width=30px height=30px></img>  </a>
+<a href= "http://www.instagram.com"><img src="instagram.png" alt="instagram" width=30px height=30px></img>  </a>
+<a href= "http://www.facebook.com"><img src="facebook.png" alt="facebook" width=30px height=30px></img>  </a>
+</br> 
+<marquee direction="right">
+<p>#myNYUAD</p>
+</marquee>
 </center>
 </div>
 
-<marquee direction="right">
-<br> The</br>
-</marquee>
+
 
 </body>
 
 
 
 
-<html>
+</html>
