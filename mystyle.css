@@ -8,6 +8,7 @@ body{
 position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 20;
 }
 
 .menu ul {
@@ -18,8 +19,7 @@ position: -webkit-sticky; /* Safari */
   background-color: #333;
   font-family: Helvetica;
   font-size: 12px;
-    position:relative;
-z-index: 3;
+ 
 }
 
 .menu li {
@@ -57,8 +57,7 @@ z-index: 3;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  position: relative;
-  z-index: 3;
+  
 }
 
 .menu .dropdown-content a {
