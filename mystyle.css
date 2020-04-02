@@ -4,10 +4,12 @@ body{
   color: blue;
   margin: 0;} 
 
-.menu ul {
-   position: -webkit-sticky; /* Safari */
+.menu   {
+position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: 0;}
+
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
