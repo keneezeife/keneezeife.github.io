@@ -5,12 +5,12 @@
 .topic {
 font-family: Helvetica, cursive;
   font-weight: 100;
-  position: absolute;
+  /*position: absolute;*/
     display: block;
 }
 
 .topic p {
-  position: relative; 
+  /*position: relative;*/ 
 
 
   display: block;

@@ -39,6 +39,8 @@
          padding: 10px;}
 .item5 a{text-decoration: none;}
 
+
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -49,6 +51,22 @@
   grid-gap: 10px;
   /*background-color: red;*/
  
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu'
+    'main'
+    'main2'
+    'footer';
+  grid-gap: 10px;
+  /*background-color: red;*/
+ 
+}
 }
 
 .grid-container > div {
