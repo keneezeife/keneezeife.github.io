@@ -1,268 +1,439 @@
+<!doctype html>
+<html>
+<head>
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Simple &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+<title>KeneEzeife</title>
+<link rel="shortcut icon" href="pics/icon.jpg"> 
 
-  <!-- 
-	//////////////////////////////////////////////////////
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="topicbounce.css">  
+  <link rel="stylesheet" type="text/css" href="flipword.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	//////////////////////////////////////////////////////
-	 -->
+<style>
+  a{text-decoration: none;} 
+  h3{font-family: Impact;
+      padding-bottom: 5px;
+  border-bottom: 5px solid #333;}
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+.item1 {grid-area: header;
+        background-image: url("pics/homebackground.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        padding: 20px 0px 0px 10px }
+.item2 {grid-area: menu;
+        padding: 20px 0;  }
+.item3 { grid-area: main;
+        padding: 20px 0; }
+.item4 { grid-area: main2;
+        padding: 20px 0;
+         align: center; }
+.item5 { grid-area: footer;
+         margin: 40px 0px 0px 0px; border: 0; width: 100%; height: auto; 
+         background-color: #333;
+         color: white;
+         font-size:10;
+         padding: 10px;}
+.item5 a{text-decoration: none;}
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main2 main2 main2 main2 main2'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  /*background-color: red;*/
+ 
+}
 
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+.grid-container > div {
+  /*background-color: green;*/
+  /*text-align: center;*/
+}
+  
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-	
-	<div id="fh5co-wrap">
-		<header id="fh5co-header">
-			<div class="container">
-				<nav class="fh5co-main-nav">
-					<ul>
-						<li class="fh5co-active"><a href="index.html"><span>Home</span></a></li>
-						<li><a href="services.html"><span>Services</span></a></li>
-						<li><a href="about.html"><span>About</span></a></li>
-						<li><a href="contact.html"><span>Contact</span></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		<div class="fh5co-hero" style="background-image: url(images/hero_1.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Make simple and functional templates</h1>
-							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="fh5co-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<h2>Creative Design</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
-					</div>
-					<div class="col-md-7">
-						<img src="images/hero_1.jpg" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="fh5co-parallax" style="background-image: url(images/hero_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Keep it simple</h1>
-							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="fh5co-section">
-			<div class="container">
-				
-				<div class="row">
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-strategy"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Strategy</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-telescope"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Explore</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-circle-compass"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Direction</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-tools"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Expertise</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
+/* Slideshow container */
+.slideshow-container {
+  width: 95%;
+  min-width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 30px;
+}
 
 
-		<div class="fh5co-parallax" style="background-image: url(images/hero_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Less is more</h1>
-							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="fh5co-section">
-			<div class="container">
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Made With Love</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
-					</div>
-					<div class="col-md-6">
-						<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-					</div>
-				</div>
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-			</div>
-		</div>
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-	</div> <!-- END fh5co-wrap -->
+/* On hover, add a cyan background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: cyan;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  font-family: Roboto;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+  
+  .text a{text-decoration: none; color:white;}
+ .text a:hover{color:cyan; } 
+.text a:active{color:cyan; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: cyan;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+$offset : -90px;
+$count : 40;
+$duration : 1;
+@keyframes wave {
+  from { transform : translateY(0); color: white; }
+  to   { transform : translateY( $offset ); }
+}
+/*Waving Text Animation*/
+.wavetext { margin-top : 10em; text-align : center;}
+.wavetext span {
+  display: inline-block;
+  font-family : "Fredoka One", sans-serif;
+  font-size : 70px; 
+  animation-duration: #{$duration}s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@for $i from 0 to $count {
+  .wavetext :nth-child( #{$count}n + #{$i} ) {
+      animation-delay : 
+        -#{($count - $i) * 2 * $duration / $count }s;
+ color: blue;
+  }
+}
+
+</style>
+ 
+<style> 
+
+.card {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+margin: 0px 30px; 
+border: 2px black;
+border-radius: 5px; 
+width: 300px; 
+min-width:300px; 
+min-height:400px;
+height: auto; 
+color: #333; 
+background-color:white;
+text-align:left; 
+padding:10px; 
+vertical-align: top;
+transition: transform 2s;
+  
+}
+
+.card:active{text-decoration: none;}
+.card:visited{text-decoration: none;}
+.card:link{text-decoration: none;} 
+.card:hover {
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  background-color: cyan;
+}
+  /*Read More Button*/
+  #readbutton {
+  border-radius: 10px;
+  background-color: cyan;
+  padding: 10px; 
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 0.5s;
+}
+
+#readbutton:active {
+  text-decoration: none;
+  transform: scale(1.1);
+}  
+   
+#readbutton:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.introbox {margin: 0px 30px; border: 2px black; width: auto; min-width:300px; height: 100%; color: #333; 
+        background-color:white;text-align:left;padding:15px; vertical-align: top;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.5);}
+
+</style>
+
+</head>
+
+<body>
+ 
+<div class = "menu">
+
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Work</a>
+    <div class="dropdown-content">
+      <a href="workone.html">Work 1</a>
+      <a href="worktwo.html">Work 2</a>
+      <a href="workthree.html">Work 3</a>
+    </div>
+  </li>
+</ul>
+
+  </div>
 
 
-	<footer id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h3>About Us</h3>
-					<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
-				</div>
-				<div class="col-md-3 col-md-push-1">
-					<h3>Quick Links</h3>
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 col-md-push-1">
-					<h3>Follow Us</h3>
-					<ul class="fh5co-social">
-						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-						<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
-						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
-						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 fh5co-copyright text-center">
-					<p><small>&copy; 2016 Free HTML5 Simple. All Rights Reserved. </small> <small>Made with care by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></small></p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+  
+<div class="grid-container">
 
-	</body>
+<div class="item1"> 
+<div class = "topic">
+  <p>EZEIFEMEELU, KENECHUKWU EMMANUEL</p>
+</div>
+<br></br><br></br>
+<p><h4 class="wordCarousel">    
+         <!--        Use classes 2,3, or 4 to match the number of words --> 
+            <ul class="flip4"> 
+                <li>Welcome</li>
+                <li>欢迎</li>
+                <li>Karibu</li> 
+                <li>Bien Venue</li>  
+            </ul>
+            </h4>
+</p>
+</div>
+
+
+
+  <div class="item2">
+  <center>
+        <div class="introbox">
+          <h3 style="font-size:23px;">INTRODUCTION</h3>
+          <center>
+         <p> <img src="pics/PICTURE.jpg" width = 200px height = 300px></img></p>
+          </center>      
+         
+<b><p>Born and raised in Nigeria, I am aware of my nation's pride in her many natural resources, from her rich oil wells to vibrant wildlife. I am also aware that Nigeria’s resources can be more efficiently harnessed if the nation were to invest in technology to assist the nation's already large work force.</p>
+
+<p>Thus, I am passionate about technological growth. I believe that the field of engineering can help our globalized world to develop. Living towards this dream, I participated in Nigeria's Interswitch SPAK Innovation Challenge where my team and I suggested ways to improve Nigeria's public transportation system through an online application.</p>
+
+<p>Specifically, I am interested in Mechanical Engineering, Economics and helping others in my community.</p>
+
+<center><a href = "resume.html"><p id="readbutton">Read More</p></a></center>
+
+ </b>                      
+        </div>
+</center>
+  </div>
+  <div class="item3">
+
+  
+         
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1/3</div>
+  <img src="pics/arduino4.jpg" alt="Overhead Light" style="width:100%" height= 600px>
+  <div class="text"><a href="workone.html">Neon Overhead Light</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2/3</div>
+  <img src="pics/turtlebot1.jpg" alt="Turtlebot" style="width:100%" height= 600px>
+  <div class="text"><a href="worktwo.html">Turtlebot Landscape Mapping and Orientation</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3/3</div>
+  <img src="pics/arduino8.jpg" alt = "Next Project" style="width:100%" height= 600px>
+  <div class="text"><a href="workthree.html">Caption Three</a></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>          
+ </center>      
+
+  </div>  
+
+<div class="item4">
+<center>
+<a href="workone.html"> 
+<div class="card"> 
+  <h3 style="font-size:23px;">OVERHEAD NEON LIGHT</h3>
+ <center><p> <img src="pics/arduino8.jpg" width = 200px height = 150px border-radius =5px 5px 0 0></img></p></center> 
+<b><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<p> </b>                      
+
+</div>
+</a>
+
+<a href="worktwo.html"> 
+<div class="card" > 
+  <h3 style="font-size:23px;">TURTLEBOT LANDSCAPE ORIENTATION</h3>
+ <center> <p> <img src="pics/turtlebot1.jpg" width = 200px height = 150px border-radius =5px 5px 0 0></img></p> </center>    
+<b><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<p> </b>                      
+
+</div>
+</a>
+</center>
+</div>
+              
+<div class= "item5">
+<center> 
+<p>Stay In Touch On: 
+<a href= "http://www.twitter.com"><img src="pics/twitter.png" alt="twitter" width=30px height=30px></img>  </a>
+<a href= "http://www.instagram.com"><img src="pics/instagram.png" alt="instagram" width=30px height=30px></img>  </a>
+<a href= "http://www.facebook.com"><img src="pics/facebook.png" alt="facebook" width=30px height=30px></img>  </a>
+</p> 
+</center>
+<marquee direction="right">
+<p>#myNYUAD</p>
+</marquee>
+</div>
+
+</div>
+      
+
+</body>
+
+
+
+
 </html>
-
