@@ -289,11 +289,27 @@ transition: transform 2s;
 
   <ul>
   <li><a href="index.html">Home</a></li>
-  <li><a href="Ezeifemeelu, Kenechukwu Emmanuel Resume.pdf" target="_blank">Resume</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Resume</a>
+    <div class="dropdown-content">
+      <a href="Engineering Resume.pdf" target="_blank">Engineering Resume</a>
+      <a href="Non-Engineering Resume.pdf" target="_blank">Non-Engineering Resume</a>
+    </div>
+  </li>
+
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Experience</a>
     <div class="dropdown-content">
       <a href="RA.html">Residential Education</a>
+      <a href="heatsink.html">Research Assistant, Vijay Lab</a>
+      <a href="igem.html">NYUAD iGEM team</a>
+      <a href="shaker_test.html">Research Assistant, Shaker Test of Lunar Camera</a>
+
+    </div>
+  </li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
       <a href="neonlight.html">Overhead Neon Light</a>
       <a href="turtlebot.html">TurtleBot Landscape Orientation</a>
       <a href="NTS.html">Naija Transportation System (NTS)</a>
@@ -353,6 +369,11 @@ transition: transform 2s;
           <li>Multivariable Calculus</li>
           <li>Foundations of Science: Physics</li>
           <li>Foundations of Science: Chemistry</li>
+          <li>Statics</li>
+          <li>Dynamics</li>
+          <li>Fluid Mechanics</li>
+          <li>Solid Mechanics</li>
+          <li>Conservation Laws</li>
           <li>Engineering Ethics</li>
           <li>Design and Innovation</li>
           <li>Atom and Energy</li>
@@ -377,14 +398,14 @@ transition: transform 2s;
 <div class = "subbox">
           <h4>Technical Skills</h4>
 <ul> 
-<li>SolidWorks (Intermediate)</li>
+<li>SolidWorks (Advanced)</li>
 <li>C++ (Advanced)</li>
 <li>HTML/CSS (Advanced)</li>
-<li>Python (Intermediate)</li>
+<li>Python (Advanced)</li>
+<li>COMSOL (Intermediate)</li>
+<li>MATLAB (Intermediate)</li>
 <li>Stata (Advanced)</li>
-<li>MS Excel (Advanced)</li>
-<li>MS Word (Advanced)</li>
-<li>MS PowerPoint (Advanced)</li>
+<li>MS Office (Advanced)</li>
 </ul> 
 </div>
 
@@ -394,9 +415,22 @@ transition: transform 2s;
 <li>Teamwork</li>
 <li>Innovative</li>
 <li>Communication Skills</li>
-<li>Versatile</li>
+<li>Versatility</li>
 </ul> 
-</div>                   
+</div>                  
+</div>
+
+<div class="box">
+          <h3 style="font-size:23px;">AWARDS & ACCOMPLISHMENTS</h3> 
+    
+<div class = "subbox">         
+<p><b>2nd Best in Nigeria, 2019 West African Senior School Certificate Examination</b></p>
+<ul><li>Out of the approximately 346,098 students that sat for the 2019 national high school certification examination, I emerged the candidate with the second best score in Nigeria.</li></ul>
+<p><b>Third Position, 2018 Interswitch SPAK Innovation Challenge</b></p>
+<ul><li>Out of the 11,412 students who entered the preliminary stages of this competition, my team of eight other students emerged in the third position.</li></ul>         
+</div>
+
+       
 </div>
 </center>
 
@@ -500,15 +534,51 @@ function showSlides(n) {
         <center><div class="box">
 <h4><img src="pics/nyu_icon.png" alt="nyuad" width=40px height=40px></img>  New York University Abu Dhabi, United Arab Emirates.</h4>
 <p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> May 2023</p>
-          <p>Bachelor of Science, Mechanical Engineering. Current GPA: 3.97/4.0</p>       
+          <p>Bachelor of Science, Mechanical Engineering; Economics (Minor). Current GPA: 4.0/4.0</p>          
         </div></center>
 
-<h3 style="font-size:32px; color:#333; margin: 0 5% 2% 5%;">VOLUNTEER & WORK EXPERIENCE</h3>
+<h3 style="font-size:32px; color:#333; margin: 0 5% 2% 5%;">WORK & VOLUNTEER EXPERIENCE</h3>
 
 
         <center><div class="box">
  <div class = "subbox">
-          <h4><img src="pics/nyu_icon.png" alt="nyuad" width=40px height=40px></img> Residential Assistant - Residential Education, New York University Abu Dhabi</h4>
+          <h4><img src="pics/nyu_icon.png" alt="nyuad" width=40px height=40px></img> Research Assistant - Vijay Lab: Heatsink Lattice Optimization, New York University Abu Dhabi</h4>
+<p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> March 2021 - Present</p>
+          <ul>
+<li>Researched the use of Cubic and TPMS lattices to improve heat transfer efficiency in heat-sinks of electronic devices in the micro and nano-scale.</li>
+<li>Designed various lattice structures such as FCC and BCC using SolidWorks and ran heat transfer simulations using COMSOL application.</li> 
+<li>Examined different TPMS structures such as Primitive and Fischer-Koch S to determine the most effective heatsinks at different heat inputs and fan speeds.</li>
+
+          </ul>         
+ <a href = "heatsink.html"><p id="readbutton">Read More</p></a>
+	  </div>
+
+
+
+<div class = "subbox">
+          <h4><img src="pics/igem.png" alt="nyuad" width=40px height=40px></img> Team Member - NYUAD iGEM Competition team</h4>
+<p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> March 2021 - Present</p>
+          <ul>
+<li>Collaborate with staff and student members in both the engineering and biology team to design a Point of Care (POC) device to detect fungal infections in amphibians.</li>
+<li>Conduct research to determine relevant parts to purchase and use in the construction of the POC device.</li>
+          </ul>         
+ <a href = "igem.html"><p id="readbutton">Read More</p></a>
+	  </div>
+
+
+<div class = "subbox">
+          <h4><img src="pics/nyu_icon.png" alt="nyuad" width=40px height=40px></img> Research Assistant - Shaker Test of Lunar Camera, New York University Abu Dhabi</h4>
+<p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> November 2020 - Present</p>
+          <ul>
+<li>Assessed the ability of a camera to withstand mechanical failure during space travel through vibrational testing at different frequencies.</li> 
+<li>Logged data from the shaker’s accelerometer to compare camera’s performance against the given guidelines.</li>
+
+          </ul>         
+ <a href = "shaker_test.html"><p id="readbutton">Read More</p></a>
+	  </div>
+
+<div class = "subbox">
+          <h4><img src="pics/nyu_icon.png" alt="nyuad" width=40px height=40px></img> Resident Assistant - Residential Education, New York University Abu Dhabi</h4>
 <p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> August 2020 - Present</p>
           <ul>
 <li>Organize budgets and finances for programs in the various residential communities. </li>
@@ -519,7 +589,7 @@ function showSlides(n) {
  <a href = "RA.html"><p id="readbutton">Read More</p></a>
 	  </div>
 
- <div class = "subbox">
+<div class = "subbox">
           <h4>Mentor - College Admissions Mentors For Africa (CAMA)</h4>
 <p style = "color: rgb(0,206,209);"><i class="fa fa-calendar fa-fw w3-text-cyan"> </i> August 2020 - Present</p>
           <ul>
